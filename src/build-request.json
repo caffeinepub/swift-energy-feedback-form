@@ -1,0 +1,36 @@
+{
+  "kind": "build_request",
+  "title": "Add Indonesian language option to the language menu",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Add Indonesian as a supported UI language across the app by (1) adding a new language option with code \"id\" to the language dropdown, (2) extending the Language type to include \"id\", and (3) providing a full Indonesian translation entry for all existing translation keys used by the UI.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-12"
+        ],
+        "quotes": [
+          "can you add a indonesian language in the languag menu"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The language selector dropdown includes an Indonesian option labeled \"Bahasa Indonesia\" with the Indonesia flag emoji (🇮🇩) and uses language code \"id\".",
+        "Selecting Indonesian updates all UI labels/buttons/messages that are driven by LanguageContext translations (e.g., titles, form labels/placeholders, View Feedback, PIN dialog strings, table headers, empty/error states).",
+        "TypeScript builds without errors and no components reference a missing translation key for the \"id\" language.",
+        "If a user selects Indonesian, the app does not crash and renders translated strings everywhere translations are used."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/components/ui or any paths listed as immutable in SYSTEM_CONTEXT."
+  ],
+  "nonGoals": [
+    "Fixing the \"View Feedback\" loading failure (PIN gating, React Query, or backend responsiveness issues) is out of scope for this request unless directly caused by adding the Indonesian language option."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

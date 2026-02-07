@@ -1,0 +1,11 @@
+{
+  "frontend/src/App.tsx": "Main application component with responsive layout for mobile and tablet devices, featuring the Swift Energy logo, feedback form, language selector, \"Our Website\" button (updated from \"Swift Energy Website\"), PIN-protected \"View Feedback\" button, and footer with attribution.",
+  "frontend/src/components/FeedbackForm.tsx": "Form component with six multilingual input fields (name, age, country, team, thoughts, feelings) that submits feedback to the backend and clears the form on successful submission with toast notifications.",
+  "frontend/src/components/FeedbackTable.tsx": "Responsive table component displaying all submitted feedback entries with horizontal and vertical scrolling for mobile devices, featuring multilingual column headers and readable font sizes across all screen sizes.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for fetching all feedback and submitting new feedback entries (including country and team fields) with automatic cache invalidation.",
+  "frontend/src/index.css": "Global styles with OKLCH color system customized for Swift Energy brand, including custom utility classes for extra-small breakpoint (xs) to support responsive text display on mobile devices.",
+  "frontend/src/components/PinDialog.tsx": "Dialog component that prompts users to enter a numeric PIN (93023) before accessing the feedback table, with error handling for incorrect entries.",
+  "frontend/src/components/LanguageSelector.tsx": "Dropdown selector component in the top-left corner that allows users to switch between fifteen languages (English, Hindi, Kazakh, Chinese, Spanish, Thai, Russian, Japanese, French, Portuguese, Italian, Arabic, Tagalog, Vietnamese, Indonesian) with flag icons.",
+  "frontend/src/contexts/LanguageContext.tsx": "React context provider managing language state and translation function for fifteen languages (English, Hindi, Kazakh, Chinese, Spanish, Thai, Russian, Japanese, French, Portuguese, Italian, Arabic, Tagalog, Vietnamese, Indonesian), with complete translations for all UI strings including form labels, buttons, error messages, and table headers.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom xs breakpoint (475px) for enhanced mobile responsiveness and OKLCH color tokens for the Swift Energy brand theme."
+}

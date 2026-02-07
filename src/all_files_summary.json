@@ -1,0 +1,20 @@
+{
+  "backend/main.mo": "Motoko canister storing feedback entries with submit, query, filtering and sorting capabilities based on age, date, and fields.",
+  "feature_evidence.json": "Feature evidence report documenting addition of Indonesian language support and associated files, components, and tests.",
+  "frontend-file-summaries.txt": "Text file listing short summaries for major frontend files such as App, forms, tables, hooks, and styling.",
+  "frontend/index.html": "Base HTML entry point mounting the React app and loading the main TypeScript bundle.",
+  "frontend/src/App.tsx": "Main React component providing layout, language selector, feedback form, PIN-gated feedback table, and external site link.",
+  "frontend/src/components/FeedbackForm.tsx": "Multilingual form component validating and submitting feedback fields and resetting on success.",
+  "frontend/src/components/FeedbackTable.tsx": "Scrollable feedback table showing all entries with formatted timestamps, loading states, and multilingual headers.",
+  "frontend/src/components/LanguageSelector.tsx": "Dropdown selector allowing users to switch between fifteen languages with flags and codes.",
+  "frontend/src/components/PinDialog.tsx": "A PIN entry dialog that validates a fixed PIN, shows success or error toasts, and notifies parent on success.",
+  "frontend/src/contexts/LanguageContext.tsx": "Provides a language context with translation dictionaries for multiple locales.",
+  "frontend/src/hooks/useActor.ts": "Creates and manages a backend actor tied to Internet Identity, handling access control initialization and query invalidation.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Implements an Internet Identity provider and hook for authentication, identity persistence, and login state handling.",
+  "frontend/src/hooks/useQueries.ts": "Defines React Query hooks for fetching all feedback and submitting feedback through the backend actor.",
+  "frontend/src/index.css": "Tailwind-based global styles defining theme variables and utility rules for light and dark modes.",
+  "frontend/src/main.tsx": "Application entry point that initializes React, query client, and the Internet Identity provider.",
+  "frontend/src/utils/urlParams.ts": "Utility functions for reading, storing, and clearing URL and session parameters, supporting both normal and hash-based routing.",
+  "frontend/tailwind.config.js": "Configures Tailwind with custom screens, radius, OKLCH-based color system, and includes animation and typography plugins.",
+  "project_state.json": "Defines the project's state, including metadata, known issues, and a pending feature request to add Indonesian language support."
+}

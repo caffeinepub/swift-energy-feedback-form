@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [
+    "\"View Feedback\" page fails to load (blank screen or error when accessing feedback)"
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-add-indonesian-as-a-supported-ui-language-across-the-app-by-1-adding-a-new-language-option-with-code-id-to-the-language-dropdown-2-extending-the-language-type-to-include-id-and-3-providing-a-full-indonesian-translation-entry-for-all-existing-translation-keys-used-by-the-ui",
+      "title": "Add Indonesian as a supported UI language across the app by (1) adding a new language option with code \"id\" to the language dropdown, (2) extending the Language type to include \"id\", and (3) providing a full Indonesian translation entry for all existing translation keys used by the UI.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Add Indonesian language option to the language menu",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Add Indonesian language option to the language menu",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

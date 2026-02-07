@@ -1,0 +1,43 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-07T10:16:51.235Z",
+  "summary": "REQ-1 is partially implemented: the Indonesian option (code \"id\") was added to the language dropdown and the Language union type was extended to include \"id\". However, the diff summary does not provide evidence that a complete Indonesian (\"id\") translation dictionary was added for all existing translation keys.",
+  "missing_requirements": [
+    {
+      "id": "REQ-1",
+      "requirement": "Provide a full Indonesian translation entry for all existing translation keys used by the UI (language code \"id\").",
+      "reason": "While the Language type now includes \"id\" and the selector includes Indonesian, the shown `translations` object excerpt only includes `en` and `hi` (then truncates). There is no visible evidence in the diff summary that an `id: { ... }` translation block exists with all required keys, which is necessary to avoid missing-key runtime issues and satisfy the AC about fully translated UI labels/messages.",
+      "evidence": [
+        "frontend/src/contexts/LanguageContext.tsx (truncated)",
+        "frontend-file-summaries.txt (claims complete translations but no key-level evidence shown)"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Added/modified Internet Identity authentication provider/hook code unrelated to adding Indonesian language support.",
+      "reason": "Not requested by the BuildRequest and explicitly out of scope unless directly caused by adding the language option; the diff summary shows changes to the Internet Identity hook without any demonstrated connection to translations.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts (truncated)",
+        "frontend/src/main.tsx"
+      ]
+    },
+    {
+      "description": "Introduced `project_state.json` tracking file with feature request metadata.",
+      "reason": "Not requested by the BuildRequest and not necessary to implement REQ-1.",
+      "evidence": [
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.68,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/LanguageSelector.tsx",
+    "frontend/src/contexts/LanguageContext.tsx",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/main.tsx",
+    "project_state.json"
+  ]
+}

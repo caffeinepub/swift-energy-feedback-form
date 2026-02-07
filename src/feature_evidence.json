@@ -1,0 +1,25 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-indonesian-as-a-supported-ui-language-across-the-app-by-1-adding-a-new-language-option-with-code-id-to-the-language-dropdown-2-extending-the-language-type-to-include-id-and-3-providing-a-full-indonesian-translation-entry-for-all-existing-translation-keys-used-by-the-ui",
+      "featureTitle": "Add Indonesian as a supported UI language across the app by (1) adding a new language option with code \"id\" to the language dropdown, (2) extending the Language type to include \"id\", and (3) providing a full Indonesian translation entry for all existing translation keys used by the UI.",
+      "files": [
+        "frontend/src/components/LanguageSelector.tsx",
+        "frontend/src/contexts/LanguageContext.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

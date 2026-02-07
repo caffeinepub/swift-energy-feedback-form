@@ -1,0 +1,29 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add Indonesian (id) to language menu and UI translations",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Add Indonesian (\"id\") as a supported UI language, including a new selector option and complete translations for all existing UI translation keys.",
+      "acceptanceCriteria": [
+        "The language selector dropdown includes an Indonesian option labeled \"Bahasa Indonesia\" with the Indonesia flag emoji (🇮🇩) and uses language code \"id\".",
+        "Selecting Indonesian updates all UI labels/buttons/messages that are driven by LanguageContext translations (e.g., titles, form labels/placeholders, View Feedback, PIN dialog strings, table headers, empty/error states).",
+        "TypeScript builds without errors and no components reference a missing translation key for the \"id\" language.",
+        "If a user selects Indonesian, the app does not crash and renders translated strings everywhere translations are used."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/contexts/LanguageContext.tsx",
+          "operation": "modify",
+          "description": "Extend the Language union type to include \"id\" and add a complete Indonesian (id) translation map covering every existing translation key currently used by the UI. Tighten typings (e.g., using a shared TranslationKey type and Record<Language, Record<TranslationKey,string>>) so TypeScript enforces that \"id\" includes all required keys and prevents missing-key crashes."
+        },
+        {
+          "path": "frontend/src/components/LanguageSelector.tsx",
+          "operation": "modify",
+          "description": "Add a new language dropdown option for Indonesian using code \"id\", label \"Bahasa Indonesia\", and flag \"🇮🇩\". Ensure the option integrates with the existing Select control without modifying any files under frontend/src/components/ui."
+        }
+      ]
+    }
+  ]
+}
